@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden !important; 
+  touch-action: none;          
+  overscroll-behavior: none;
+  background-color: palevioletred; 
+  font-family: 'Times New Roman', Times, serif; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+.card {
+  background-color: rgb(249, 204, 212); 
+  border-radius: 16px; 
+  width: fit-content;      
+  padding: 25px 30px;
+  margin: 0 auto;        
+  display: flex;
+  max-width: 90vw;
+  max-height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); 
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.text-top {
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 6px; /* ATUR JARAK KE TEKS BAWAH DI SINI (bebas ubah angka px-nya) */
+}
+
+.text-bottom {
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px; /* Jarak ke elemen di bawahnya (sosmed) */
+}
+
+.social-container {
+  display: flex;
+  flex-direction: row;  
+  justify-content: center;
+  align-items: center;
+  gap: 12px;           
+  width: 100%;
+  flex-wrap: nowrap;    
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: #000;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.social-item img {
+  width: 7px;
+  height: 7px;
+}
